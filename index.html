@@ -61,31 +61,35 @@
                     <svg width="12" height="12" class="form-icon">
                       <use href="./images/icons.svg#icon-user"></use>
                     </svg>
-                    <input class="input-form" type="text" name="name" placeholder=" " id="user_name" required>
+                    <input class="input-form" type="text" name="name" id="user_name" required>
                   </div>
                     <label for="user_tel" class="label-style">Телефон</label>
                     <div class="form-field">
                       <svg width="12" height="12" class="form-icon">
                         <use href="./images/icons.svg#icon-tel"></use>
                       </svg>
-                    <input class="input-form" type="tel" name="tel" placeholder=" " id="user_tel" required>
+                    <input class="input-form" type="tel" name="tel" id="user_tel" required>
                   </div>
                     <label for="user_email" class="label-style">Пошта</label>
                     <div class="form-field">
                       <svg width="12" height="12" class="form-icon">
                         <use href="./images/icons.svg#icon-email"></use>
                       </svg>
-                    <input type="email" class="input-form" name="email" placeholder=" " id="user_email">
+                    <input type="email" class="input-form" name="email" id="user_email" required>
                   </div>
+                  <label for="user_comment" class="label-style">Коментар</label>
                   <div class="form-field">
-                    <label for="user_comment" class="label-style">Коментар</label>
-                    <textarea name="comment" id="user_comment" cols="30" rows="10" placeholder="Введіть текст"></textarea>
-                    <label>
+                    <textarea name="comment" class="comment-input" id="user_comment" placeholder="Введіть текст"></textarea>
                   </div>
-                  <input type="checkbox" name="agreement" value="agree">
-                  Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a>
-                  </label>
-                  <button type="submit" class="form-button">Відправити</button>
+                  <div class="checkdiv">
+                    <label class="check-title">
+                      <input type="checkbox" name="agreement" value="agree" class="check-agreement">
+                      <svg width="11" height="8" class="check-svg">
+                      </svg>
+                      Погоджуюся з розсилкою та приймаю <a href="" class="check-link">Умови договору</a>
+                    </label>
+                    <button type="submit" class="form-button">Відправити</button>
+                  </div>
                 </div>
               </form>
             </div>
@@ -417,6 +421,17 @@
                 </a>
               </li>
             </ul>
+          </div>
+          <div class="mailing">
+            <h3 class="social-title">Підпишіться на розсилку</h3>
+            <form action="" autocomplete="off" name="news" class="foot-form">
+              <input type="email" name="email" placeholder="E-mail" class="foot-input">
+              <button type="submit" class="foot-button">Підписатися
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </form>
           </div>
         </div>
       </div>
